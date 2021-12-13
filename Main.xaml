@@ -1,0 +1,233 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1044,2291" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="40">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="34">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="670,2226" sap2010:WorkflowViewState.IdRef="Sequence_8">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="table" />
+      <Variable x:TypeArguments="x:String" Name="str_zagolovok" />
+      <Variable x:TypeArguments="x:String" Name="str_data" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Официальные курсы валют на заданную дату, устанавливаемые ежедневно | Банк Росси" sap:VirtualizedContainerService.HintSize="628,1079" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="5fef8943-c8c5-4a1d-96b9-24ebacb0a4f1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,863" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[table]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Цифр. код' ReferenceIdx='0' Name='Цифр. код'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Букв. код' ReferenceIdx='1' Name='Букв. код'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Единиц' ReferenceIdx='2' Name='Единиц'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Валюта' ReferenceIdx='3' Name='Валюта'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Курс' ReferenceIdx='4' Name='Курс'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Цифр. код' attr='text' /&gt;&lt;column name='Букв. код' attr='text' /&gt;&lt;column name='Единиц' attr='text' /&gt;&lt;column name='Валюта' attr='text' /&gt;&lt;column name='Курс' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="5fef8943-c8c5-4a1d-96b9-24ebacb0a4f1" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://cbr.ru/currency_base/daily/" DesignTimeRectangle="781, 690, 856, 45" ElementType="Text" FriendlyName="'Японских иен'" FullSelectorArgument="&lt;webctrl parentid='content' tag='TABLE' /&gt;&lt;webctrl tableCol='4' tableRow='35' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='TABLE' /&gt;&lt;webctrl type='' aaname='Японских иен' tag='TD' check:text='Японских иен' /&gt;" Guid="840a8c62-5878-4301-b3e4-2accdadbe59a" ImageBase64="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" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Официальные курсы валют на заданную дату, устанавливаемые ежедневно | Банк России' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="169, 571, 1670, 1583" FriendlyName="'Цифр. код'" FullSelectorArgument="&lt;webctrl parentid='content' tag='TABLE' /&gt;" Guid="1dad3ed5-2a1f-437c-b445-0b035c93857c" InformativeScreenshot="9e9d49948a499f67062356b69b66c106.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Официальные курсы валют на заданную дату, устанавливаемые ежедневно | Банк России' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Цифр. код" DataTable="[table]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_1" />
+            <uix:NGetText DisplayName="Get Text 'Центральный банк'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="5fef8943-c8c5-4a1d-96b9-24ebacb0a4f1" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://cbr.ru/currency_base/daily/" DesignTimeRectangle="169, 597, 1670, 121" FriendlyName="'Центральный банк'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' /&gt;" Guid="4bf2436b-8fba-4a12-b36e-7ca190c44bba" ImageBase64="" InformativeScreenshot="e30d2a3f2086de0f6c15e87294575cc5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Официальные курсы валют на заданную дату, устанавливаемые ежедневно | Банк России' /&gt;" SearchSteps="Selector" />
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[str_zagolovok]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,151" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Matches BuilderPattern="(.)(\d+)(.)(\d+)(.)(\d+)(.)" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[str_zagolovok]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ANYTHING&quot;,&quot;OperationName&quot;:&quot;Anything&quot;,&quot;OperationValue&quot;:&quot;.&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:1,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Digit&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;At least one (1 or more)&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:2,&quot;OperationID&quot;:&quot;ANYTHING&quot;,&quot;OperationName&quot;:&quot;Anything&quot;,&quot;OperationValue&quot;:&quot;.&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:3,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Digit&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;At least one (1 or more)&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:4,&quot;OperationID&quot;:&quot;ANYTHING&quot;,&quot;OperationName&quot;:&quot;Anything&quot;,&quot;OperationValue&quot;:&quot;.&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:5,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Digit&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;At least one (1 or more)&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:6,&quot;OperationID&quot;:&quot;ANYTHING&quot;,&quot;OperationName&quot;:&quot;Anything&quot;,&quot;OperationValue&quot;:&quot;.&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(.)(\d+)(.)(\d+)(.)(\d+)(.)" RegexOption="IgnoreCase, Compiled" />
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[str_data]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(str_zagolovok,"(.)(\d+)(.)(\d+)(.)(\d+)(.)").Value]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFtSURBVDhPldJNK0RRHMfxW3MXtyyMhYVGFuQFzMLGgoUk8Rrk6T2IaDyVuuNxQeQN2ExkDCkNkmQtNray87hB8vD9Tf+T241w6tOc+Z3/+Z85d64XH2E4E6AG5fCz2Vnf5soCK/t+UFCNBVziCG1ot7myeaSs/GsQ6pR6dEIbhvGIaczhAUPQmmpU67vN+snjuMIdesKw9LN3LLtGwa7SD9UoH0WgBq0WfpgxJHESyY6h5zAZyW7QogY63YVyjjxeIpnmm7iIZO/IqMFGJPyvnBrori54wj2eoRNcrrlb06fLt9Rg1768YQWN9hm/wjK0tgrVKt9Wg0P7ojvq4aWg5/AKnSyan6EKFShAe4pqUMQ+9J93oA9TWIJOkkXLeqH3QLUH2FODNNS1G2sYQBnW4a6Qs2wQqumC9qRLL5MbFjagGdF34xZN0FrSyn8eFGXgNjsjtvz7oLgOEzg1etlqbflvgw0JVJqExbHheZ9MrcjT9BiRBAAAAABJRU5ErkJggg==" InformativeScreenshot="80b695355b62c16d4ce9237a49eddb74.png" Selector="&lt;html app='chrome.exe' title='Официальные курсы валют на заданную дату, устанавливаемые ежедневно | Банк России'/&gt;" Url="https://cbr.ru/currency_base/daily/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="628,1015" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,929" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" AutoSave="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="552,837" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" WorkbookPath="Book 1">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence sap:VirtualizedContainerService.HintSize="518,571" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,479" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ueab:SaveExcelFileAsX DisplayName="Save Excel File As" FilePath="[&quot;C:\Users\miklag01\Desktop\specialist\Курс на &quot; + str_data + &quot;.xlsx&quot;]" sap:VirtualizedContainerService.HintSize="434,205" sap2010:WorkflowViewState.IdRef="SaveExcelFileAsX_3" SaveAsFileType="OpenXmlWorkbook" Workbook="[Excel]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ueab:SaveExcelFileAsX>
+                      <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="WriteRangeX_2" IgnoreEmptySource="False" Source="[table]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ueab:WriteRangeX>
+                      <ueab:SaveExcelFileX DisplayName="Save Excel File" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="SaveExcelFileX_2" Workbook="[Excel]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ueab:SaveExcelFileX>
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
